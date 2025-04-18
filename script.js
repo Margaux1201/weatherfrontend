@@ -1,6 +1,7 @@
 fetch("https://weatherbackend-peach.vercel.app/weather")
   .then((response) => response.json())
   .then((data) => {
+    //console.log("DONNES OBTENU", data);
     if (data.weather) {
       for (let i = 0; i < data.weather.length; i++) {
         document.querySelector("#cityList").innerHTML += `
