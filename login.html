@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="login.css" />
+  </head>
 
-<head>
-  <link rel="stylesheet" href="login.css" />
-</head>
+  <body>
+    <header>
+      <!--Retour à la page d'accueil (index.html)-->
+      <a id="homeButton">
+        <img id="logo" src="images/logo.svg" />
+      </a>
+    </header>
 
-<body>
-  <div id="header">
-    <a id="homeButton">
-      <img id="logo" src="images/logo.svg" />
-    </a>
-  </div>
-
-  <div id="container">
-    <div class="connexionCard">
-      <div>
+    <main id="container">
+      <section class="connexionCard">
+        <!--Ajout d'un utilisateur dans la base de données-->
         <p>SIGN-UP</p>
-        <div class="divider"></div>
-      </div>
-      <input id="registerName" type="text" placeholder="Name" />
-      <input id="registerEmail" type="email" placeholder="E-mail" />
-      <input id="registerPassword" type="password" placeholder="Password" />
-      <button id="register">Register</button>
-    </div>
-    <div class="connexionCard">
-      <div>
+        <input id="registerName" type="text" placeholder="Name" />
+        <input id="registerEmail" type="email" placeholder="E-mail" />
+        <input id="registerPassword" type="password" placeholder="Password" />
+        <button id="register">Register</button>
+      </section>
+
+      <section class="connexionCard">
+        <!--Connexion d'un utilisateur existant dans la base de données-->
         <p>SIGN-IN</p>
-        <div class="divider"></div>
-      </div>
-      <input id="connectionEmail" type="email" placeholder="E-mail" />
-      <input id="connectionPassword" type="password" placeholder="Password" />
-      <button id="connection">Connect</button>
-    </div>
-  </div>
+        <input id="connectionEmail" type="email" placeholder="E-mail" />
+        <input id="connectionPassword" type="password" placeholder="Password" />
+        <button id="connection">Connect</button>
+      </section>
+    </main>
 
-  <script src="login.js"></script>
-</body>
-
+    <script src="login.js"></script>
+  </body>
 </html>

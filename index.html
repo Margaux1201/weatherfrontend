@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <header>
+      <!--Retour à la page d'accueil (index.html)-->
+      <a id="logoButton">
+        <img id="logo" src="images/logo.svg" />
+      </a>
 
-<body>
-  <div id="header">
-    <a id="logoButton">
-      <img id="logo" src="images/logo.svg" />
-    </a>
+      <!--barre de recherche des villes-->
+      <section class="headerDiv">
+        <input id="cityNameInput" type="text" placeholder="Add new city" />
+        <button id="addCity"><img id="glass" src="images/glass.png" /></button>
+      </section>
 
-    <div class="headerDiv">
-      <input id="cityNameInput" type="text" placeholder="Add new city" />
-      <button id="addCity"><img id="glass" src="images/glass.png" /></button>
-    </div>
+      <!--Retour à la page d'authentification (login.html)-->
+      <a id="userButton">
+        <img id="userIcon" src="images/user.png" />
+      </a>
+    </header>
 
-    <a id="userButton">
-      <img id="userIcon" src="images/user.png" />
-    </a>
-  </div>
+    <main id="cityList"></main>
 
-  <div id="cityList"></div>
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
