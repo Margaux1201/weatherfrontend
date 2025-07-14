@@ -155,3 +155,10 @@ button {
 	background-color: transparent;
 	border: none;
 }
+
+#nocitymessage {
+	font-size: 18px;
+	color: white;
+	margin-top: 100px;
+	text-align: center;
+}
